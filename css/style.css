@@ -1,0 +1,274 @@
+.main__banner {
+  font-family: var(--family);
+  position: relative;
+  max-width: 100vw;
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.637)),
+    url("../src/images/content/banner.jpg") no-repeat center center/cover;
+}
+
+.main__banner-content {
+  color: var(--white);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main__banner-content h1 {
+  font-size: clamp(32px, 2.5vw, var(--font-70));
+  font-weight: var(--weight-bold);
+}
+
+.main__banner-content p {
+  text-align: center;
+  margin-top: 25px;
+  font-size: var(--font-32);
+}
+
+.main__banner-content img {
+  cursor: pointer;
+  margin-top: 10%;
+  width: 45px;
+  transition: all 0.5s ease-in-out;
+}
+
+.main__banner-content img:hover {
+  margin-top: 13%;
+}
+
+.main__us-wrapper {
+  margin-top: 15%;
+  display: flex;
+
+  align-items: center;
+  gap: 5%;
+}
+
+.main__us-text {
+  text-align: center;
+}
+
+.main__us-text h2 {
+  position: relative;
+  display: inline-block;
+  font-size: var(--font-40);
+  font-weight: var(--weight-bold);
+}
+
+.main__us-text h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--blue);
+}
+
+.main__us-text p {
+  margin-top: 40px;
+  font-size: var(--font-20);
+  line-height: 1.5;
+}
+
+.main__service {
+  margin-top: 15%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__service h2 {
+  font-size: var(--font-60);
+  font-weight: var(--weight-bold);
+}
+
+.main__service p {
+  margin-top: 40px;
+  font-size: var(--font-20);
+}
+
+.main__service-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__service-row {
+  max-height: 350px;
+  height: 350px;
+  max-width: 1200px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__service-row:first-child {
+  margin-top: 50px;
+}
+
+.main__service-image {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main__service-image img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+.main__service-row img:hover {
+  transform: scale(1.2);
+}
+
+.main__service-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+  color: var(--white);
+  width: 50%;
+  height: 100%;
+}
+
+.main__service-column h3 {
+  font-size: var(--font-32);
+  font-weight: var(--weight-bold);
+}
+
+.main__service-column p {
+  margin-top: 10px;
+  font-size: var(--font-16);
+  line-height: 1.3;
+}
+
+.main__priviliges {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.main__priviliges h2 {
+  font-size: var(--font-42);
+  font-weight: var(--weight-bold);
+}
+
+.main__priviliges-list {
+  width: 95%;
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 50px;
+  column-gap: 20px;
+}
+
+.main__priviliges-why-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: var(--font-18);
+  font-weight: var(--weight-bold);
+  color: var(--blue);
+}
+
+.main__priviliges-why-heading img {
+  width: 40px;
+}
+
+.main__priviliges-why p {
+  font-size: var(--font-16);
+  text-align: left;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+.main__form-contact {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__form-contact h2 {
+  font-size: var(--font-42);
+  font-weight: var(--weight-bold);
+}
+
+form {
+  margin-top: 10%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+form input {
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--grey);
+}
+
+form input::placeholder {
+  font-size: var(--font-16);
+}
+
+form input:focus {
+  font-family: var(--family);
+  font-size: var(--font-16);
+}
+
+@media (max-width: 768px) {
+  .main__us-wrapper img {
+    width: 50%;
+  }
+  .main__us-text p {
+    font-size: var(--font-16);
+  }
+  .main__us-text h2 {
+    font-size: var(--font-24);
+  }
+  .main__service h2 {
+    font-size: var(--font-32);
+  }
+  .main__service p {
+    font-size: var(--font-18);
+  }
+  .main__service-row {
+    max-width: 768px;
+  }
+  .main__service-row h3 {
+    font-size: var(--font-24);
+  }
+  .main__service-row p {
+    font-size: var(--font-16);
+  }
+  .main__priviliges-why-heading {
+    font-size: var(--font-14);
+    text-align: left;
+    gap: 5px;
+  }
+  .main__priviliges-why p {
+    font-size: var(--font-12);
+  }
+  .main__priviliges h2 {
+    font-size: var(--font-32);
+  }
+  .main__form-contact h2 {
+    font-size: var(--font-32);
+  }
+}

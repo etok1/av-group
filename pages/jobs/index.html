@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.V. GROUP</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <ul class="header__nav">
+          <li class="header__nav-link">
+            <a href="/pages/product/index.html">Продукция</a>
+          </li>
+          <li class="header__nav-link">
+            <a href="/pages/about/index.html">О нас</a>
+          </li>
+        </ul>
+        <a href="/index.html"
+          ><img src="/src/images/content/logo.jpg" alt="logo" width="70px"
+        /></a>
+        <ul class="header__nav">
+          <li class="header__nav-link">
+            <a href="index.html">Вакансии</a>
+          </li>
+          <li class="header__nav-link">
+            <a href="/pages/order/index.html">Сделать заказ</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__heading container">
+        <h1>Стань частью нашей команды!</h1>
+      </section>
+      <section class="main__jobs container">
+        <h2>Вакансии</h2>
+        <p>Актуальные вакансии на июль 2024:</p>
+        <div class="main__jobs-wrapper">
+          <ul class="main__jobs-list"></ul>
+        </div>
+        <div class="main__jobs-form">
+          <h4>Оставьте заявку и мы с вами свяжемся!</h4>
+          <form
+            action="https://script.google.com/macros/s/AKfycbxHU5DDrEQzMIQFQxhmZVgGl_JWrEATSynxtVnOpmDxKGPyS8HJ7lVH60mkKLtCAjA3/exec"
+            method="post"
+          >
+            <label for="name"
+              >ФИО
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Укажите ваше ФИО"
+                required
+            /></label>
+            <label for="phone"
+              >Телефон
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Телефон"
+                required
+            /></label>
+            <button type="submit" class="button">Отправить</button>
+          </form>
+        </div>
+      </section>
+      <section class="main__study container">
+        <h2>Учебный центр</h2>
+        <p>
+          Уважаемые сотрудники, всем кто желает пройти обучение в Учебном центре
+          при «A.V.Group» необходимо с удостоверением личности и ключом ЭЦП
+          подойти в Центр занятости. Если у Вас нет ЭЦП, с удостоверением
+          личности идете в ЦОН (с 9.00 до 18.00, суббота выходной).
+        </p>
+        <ul class="main__study-list">
+          <h3>Список специальностей учебного центра:</h3>
+        </ul>
+        <div class="main__jobs-form">
+          <h4>Оставьте заявку на обучение</h4>
+          <form
+            action="https://script.google.com/macros/s/AKfycbxHU5DDrEQzMIQFQxhmZVgGl_JWrEATSynxtVnOpmDxKGPyS8HJ7lVH60mkKLtCAjA3/exec"
+            method="post"
+          >
+            <label for="name"
+              >ФИО
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Укажите ваше ФИО"
+                required
+            /></label>
+            <label for="phone"
+              >Телефон
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Телефон"
+                required
+            /></label>
+            <label for="option"
+              >Какая специальность вас заинтересовала?
+              <select
+                class="main__job-selection"
+                name="job"
+                id="job"
+                required
+              ></select>
+            </label>
+            <button type="submit" class="button">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class="footer__info">
+        <div class="footer__media"></div>
+        <h2>Ержанова 18, БЦ Респект, 5 этаж</h2>
+      </div>
+    </footer>
+    <script src="/js/data.js"></script>
+    <script src="/js/renderJobs.js"></script>
+    <script src="/js/render.js"></script>
+  </body>
+</html>

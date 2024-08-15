@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.V. GROUP</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <ul class="header__nav">
+          <li class="header__nav-link">
+            <a href="/pages/product/index.html">Продукция</a>
+          </li>
+          <li class="header__nav-link">
+            <a href="/pages/about/index.html">О нас</a>
+          </li>
+        </ul>
+        <a href="/index.html"
+          ><img src="/src/images/content/logo.jpg" alt="logo" width="70px"
+        /></a>
+        <ul class="header__nav">
+          <li class="header__nav-link">
+            <a href="/pages/jobs/index.html">Вакансии</a>
+          </li>
+          <li class="header__nav-link">
+            <a href="index.html">Сделать заказ</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__order container">
+        <h1>Сделайте описание заказа и мы с вами свяжемся!</h1>
+        <form action="" method="post">
+          <label for="nameOfTheitem"
+            >Укажите продукцию
+            <select name="product" id="nameOfTheitem" class="selection">
+              <option value="sewing">Швейное производство</option>
+              <option value="typography">Типография</option>
+            </select></label
+          >
+          <label for="nameOfTheitem"
+            >Наименование изделия<input
+              type="text"
+              name="nameOfTheitem"
+              id="nameOfTheitem"
+              placeholder="Укажите наименование изделия"
+              required
+          /></label>
+          <label for="seasoning"
+            >Сезонность<input
+              type="text"
+              name="seasoning"
+              id="seasoning"
+              placeholder="Укажите сезонность"
+          /></label>
+          <label for="material"
+            >Материал<input
+              type="text"
+              name="material"
+              id="material"
+              placeholder="Укажите материал"
+              required
+          /></label>
+          <label for="color"
+            >Цвет<input
+              type="text"
+              name="color"
+              id="color"
+              placeholder="Укажите цвет"
+              required
+          /></label>
+          <label for="contact"
+            >Ваш номер телефона и имя<input
+              type="text"
+              name="contact"
+              id="contact"
+              placeholder="Укажите ваше ФИО"
+              required
+          /></label>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

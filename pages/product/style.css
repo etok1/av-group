@@ -1,0 +1,151 @@
+.main__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.main__heading h1 {
+  position: relative;
+  font-size: var(--font-52);
+  font-weight: var(--weight-bold);
+}
+
+.main__heading h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 100%;
+  height: 5px;
+  background-color: var(--blue);
+}
+
+.main__products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  font-size: var(--font-30);
+  font-weight: var(--weight-bold);
+}
+
+.main__products-slider {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__products-wrapper {
+  max-width: 1200px;
+  max-height: 600px;
+
+  overflow: hidden;
+}
+
+.main__products-wrapper .slides {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slides {
+  display: none;
+}
+
+.slides.active {
+  display: flex;
+}
+
+.main__products-arrow {
+  cursor: pointer;
+}
+
+.main__products-arrow.active circle {
+  fill: var(--blue);
+}
+
+.main__after-description {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.main__after-description img {
+  width: 45%;
+}
+
+.main__after-text {
+  margin-top: 5%;
+}
+
+.main__after-description {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.main__after-line {
+  height: 5px;
+  width: 20%;
+  background-color: var(--blue);
+}
+
+.main__after-we {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main__after-we h2 {
+  color: var(--dark-grey);
+  line-height: 1.5;
+  font-size: var(--font-20);
+}
+
+@media (max-width: 768px) {
+  .main__products {
+    margin-top: 30%;
+  }
+
+  .main__heading h1 {
+    font-size: var(--font-42);
+  }
+
+  .main__products-wrapper {
+    max-width: 768px;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  .main__products-slider {
+    margin-top: 50px;
+  }
+  .main__after-text {
+    margin-top: 10%;
+  }
+  .main__after-we h2 {
+    font-size: var(--font-18);
+  }
+}
+
+@media (max-width: 425px) {
+  .main__heading h1 {
+    font-size: var(--font-32);
+  }
+  .main__products h2 {
+    font-size: var(--font-20);
+  }
+  .main__products-wrapper {
+    max-width: 425px;
+    max-height: 300px;
+    overflow: hidden;
+  }
+  .main__products {
+    margin-top: 25%;
+  }
+  .main__after-we h2 {
+    font-size: var(--font-14);
+  }
+}

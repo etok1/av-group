@@ -1,0 +1,24 @@
+{
+  "name": "av-group",
+  "version": "1.0.0",
+  "description": "a.v. group",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etok1/av-groups.git"
+  },
+  "author": "Eva Tokmakova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etok1/av-groups/issues"
+  },
+  "homepage": "https://github.com/etok1/av-groups#readme",
+  "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.3.1",
+    "git-filter-repo": "^0.0.30",
+    "node-modules": "^1.0.1"
+  }
+}

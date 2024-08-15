@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.V. GROUP</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <ul class="header__nav">
+          <li class="header__nav-link">
+            <a href="./pages/product/index.html">Продукция</a>
+          </li>
+          <li class="header__nav-link">
+            <a href="./pages/about/index.html">О нас</a>
+          </li>
+        </ul>
+        <a href="index.html"
+          ><img src="./src/images/content/logo.jpg" alt="logo" width="70px"
+        /></a>
+        <ul class="header__nav">
+          <li class="header__nav-link">
+            <a href="./pages/jobs/index.html">Вакансии</a>
+          </li>
+          <li class="header__nav-link">
+            <a href="./pages/order/index.html">Сделать заказ</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__banner container">
+        <div class="main__banner-content">
+          <h1>A.V. Group</h1>
+          <p>Компания одна, возможностей много!</p>
+          <img
+            id="scrollBtn"
+            src="./src/images/icons/angle-down.png"
+            alt="angle-down"
+          />
+        </div>
+      </section>
+      <section class="main__us container" id="us">
+        <div class="main__us-wrapper">
+          <img src="./src/images/content/logo.jpg" alt="logo" />
+          <div class="main__us-text">
+            <h2>О наc</h2>
+            <p>
+              A.V Group уже 10 лет изготавливает специализированную одежду и
+              разрабатывает полиграфические материалы с учетом индивидуальных
+              потребностей клиентов.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="main__service container">
+        <h2 class="animated">Наши услуги</h2>
+        <p class="animated">
+          Наша цель – приложить все усилия для комплексного <br />
+          удовлетворения потребностей клиента
+        </p>
+        <div class="main__service-wrapper">
+          <div class="main__service-row animated">
+            <div class="main__service-image">
+              <img src="./src/images/content/service1.jpg" alt="service1" />
+            </div>
+            <div class="main__service-column">
+              <h3>Швейное производство</h3>
+              <p>
+                Основными выпускаемыми товарами <br />
+                компании по швейному направлению <br />
+                являются рабочая и повседневная одежда, <br />
+                изделия трикотажного машинного вязания, <br />
+                белье постельное, изделия из тканей, <br />
+                искусственной и натуральной кожи и меха
+              </p>
+            </div>
+          </div>
+          <div class="main__service-row animated">
+            <div class="main__service-column">
+              <h3>Типография</h3>
+              <p>
+                Номенклатурный перечень видов и <br />
+                разновидностей товаров выпускаемой нами <br />
+                продукции насчитывает более 3 000 <br />
+                наименований. <br />
+                Предлагаем полиграфические услуги только <br />
+                высокого качества.
+              </p>
+            </div>
+            <div class="main__service-image">
+              <img src="./src/images/content/service2.jpg" alt="service2" />
+            </div>
+          </div>
+          <div class="main__service-row animated">
+            <div class="main__service-image">
+              <img src="./src/images/content/service3.jpg" alt="service3" />
+            </div>
+            <div class="main__service-column">
+              <h3>Дорожные знаки</h3>
+              <p>
+                Выпускаемая типографией печатная <br />
+                продукция имеет свой особый стиль. Сама <br />
+                типография оснащена современной <br />
+                высокопроизводительной техникой для <br />
+                цифровой печати оперативной полиграфии.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__priviliges container">
+        <h2>Почему мы?</h2>
+        <div class="main__priviliges-list animated"></div>
+      </section>
+      <section class="main__form-contact container" id="form">
+        <h2>Свяжитесь с нами</h2>
+        <form
+          action="https://script.google.com/macros/s/AKfycbxHU5DDrEQzMIQFQxhmZVgGl_JWrEATSynxtVnOpmDxKGPyS8HJ7lVH60mkKLtCAjA3/exec"
+          method="post"
+        >
+          <input name="name" type="text" placeholder="Имя" required />
+          <input name="phone" type="tel" placeholder="Телефон" required />
+          <input name="text" type="text" placeholder="Сообщение" required />
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class="footer__info">
+        <div class="footer__media"></div>
+        <h2>Ержанова 18, БЦ Респект, 5 этаж</h2>
+      </div>
+    </footer>
+    <script>
+      const scrollButton = document.getElementById("scrollBtn");
+      const toSection = document.getElementById("us");
+
+      scrollButton.addEventListener("click", function () {
+        toSection.scrollIntoView({ behavior: "smooth" });
+      });
+      window.addEventListener("DOMContentLoaded", function () {
+        const forms = document.querySelectorAll("form");
+
+        forms.forEach((form) => {
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            const action = e.target.action;
+            fetch(action, {
+              method: "POST",
+              body: data,
+            }).then(() => {
+              window.location.hash = "#form";
+            });
+          });
+        });
+      });
+    </script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/render.js"></script>
+  </body>
+</html>

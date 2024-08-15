@@ -1,0 +1,201 @@
+.main__heading {
+  font-family: var(--family);
+  position: relative;
+  max-width: 100vw;
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.637)),
+    url("/src/images/content/banner.jpg") no-repeat center center/cover;
+}
+
+.main__heading h1 {
+  color: var(--white);
+  font-size: var(--font-60);
+  font-weight: var(--weight-bold);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main__jobs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.main__jobs h2 {
+  color: var(--blue);
+  font-weight: var(--weight-bold);
+  font-size: var(--font-30);
+}
+
+.main__jobs p {
+  font-weight: var(--weight-bold);
+  font-size: var(--font-20);
+}
+
+.main__jobs-wrapper {
+  width: 60%;
+}
+
+.main__jobs-list {
+  margin-top: 20px;
+  align-self: flex-start;
+  list-style: decimal;
+}
+
+.main__jobs-list li {
+  font-size: var(--font-20);
+  line-height: 1.3;
+}
+
+.main__jobs-form {
+  margin-top: 10%;
+}
+
+.main__jobs-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__jobs-form h4 {
+  font-size: var(--font-42);
+}
+
+.main__jobs-form form {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.main__jobs-form form label {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.main__jobs-form form input,
+.main__job-selection {
+  margin-top: 10px;
+  width: 100%;
+  padding: 20px 15px;
+  border: 1px solid var(--grey);
+}
+
+.main__jobs-form form input::placeholder,
+.main__jobs-form form input:focus {
+  font-size: var(--font-16);
+}
+
+.main__jobs-form form button {
+  margin-top: 20px;
+}
+
+.main__study {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__study h2 {
+  color: var(--blue);
+  font-size: var(--font-30);
+  font-weight: var(--weight-bold);
+}
+
+.main__study p,
+.main__study-list {
+  width: 65%;
+
+  font-size: var(--font-20);
+}
+
+.main__study p {
+  line-height: 1.5;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.main__study-list {
+  margin-top: 5%;
+  list-style: decimal;
+}
+
+.main__study-list h3 {
+  margin-bottom: 15px;
+}
+
+.main__study-list li {
+  line-height: 1.5;
+}
+
+.main__job-selection {
+  font-size: var(--font-16);
+}
+
+@media (max-width: 768px) {
+  .main__heading h1 {
+    font-size: var(--font-42);
+    text-align: center;
+  }
+  .main__jobs-form h4 {
+    font-size: var(--font-32);
+    text-align: center;
+  }
+  .main__study {
+    margin-top: 20%;
+  }
+  .main__study p,
+  .main__study-list {
+    font-size: var(--font-16);
+  }
+  .main__study-list h3 {
+    font-weight: var(--weight-bold);
+  }
+}
+@media (max-width: 425px) {
+  .main__heading h1 {
+    font-size: var(--font-24);
+  }
+  .main__heading {
+    height: 60vh;
+  }
+  .main__jobs h2 {
+    font-size: var(--font-24);
+  }
+  .main__jobs p {
+    font-size: var(--font-18);
+  }
+  .main__jobs-list li {
+    font-size: var(--font-16);
+  }
+  .main__jobs-form h4 {
+    font-size: var(--font-24);
+  }
+  .main__jobs-form form input::placeholder,
+  .main__jobs-form form label {
+    font-size: var(--font-14);
+  }
+  .main__study h2 {
+    font-size: var(--font-24);
+  }
+  .main__study p {
+    font-size: var(--font-14);
+  }
+  .main__study-list {
+    font-size: var(--font-14);
+  }
+  .main__study-list h3 {
+    font-size: var(--font-16);
+  }
+  .main__job-selection {
+    font-size: var(--font-14);
+  }
+}
